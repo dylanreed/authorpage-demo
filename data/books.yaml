@@ -5,7 +5,7 @@
 # and fill in your book's details. Newest books should go at the top.
 
 - title: "The Amazing Squirrel"
-  cover: "/images/Squirrel.jpg"
+  cover: "/images/Squirel.jpg"
   tagline: "A short story about The Amazing Squirrel"
   description: "Do cool gadgets make the superhero?"
   published: 2016
@@ -19,7 +19,7 @@
   featured: true
 
 - title: "The Correspondent: Golden Age"
-  cover: "/images/The Correspondent - Golden Age Cover.jpg"
+  cover: "/images/The-Correspondent-Golden-Age-Cover.jpg"
   tagline: "The second book in the Correspondent Series"
   description: "A superhero that learned from a correspondent course... are you insane"
   published: 2007
