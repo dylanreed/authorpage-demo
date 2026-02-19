@@ -1,5 +1,5 @@
 {{/* ABOUTME: Home page hero partial with massive author name and typewriter tagline animation. */}}
-{{/* ABOUTME: Dark atmospheric layout with amber radial gradient, author photo, and featured book teaser with redacted text. */}}
+{{/* ABOUTME: Dark atmospheric layout with amber radial gradient, author photo, and featured book teaser. */}}
 
 <section class="hero">
   <div class="hero__ambient" aria-hidden="true"></div>
@@ -30,7 +30,7 @@
     {{ end }}
   </div>
 
-  {{/* Featured book teaser with REDACTED description */}}
+  {{/* Featured book teaser */}}
   {{ with hugo.Data.books }}
     {{ range where . "featured" true }}
     {{ $book := . }}
@@ -47,9 +47,7 @@
         <h2 class="hero__featured-title">{{ .title }}</h2>
 
         {{ with .description }}
-        <p class="hero__featured-description">
-          <span class="redacted" tabindex="0" role="button" aria-label="Reveal description">{{ . }}</span>
-        </p>
+        <p class="hero__featured-description">{{ . }}</p>
         {{ end }}
 
         {{ with .buy_links }}

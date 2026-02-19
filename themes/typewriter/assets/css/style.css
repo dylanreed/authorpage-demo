@@ -94,25 +94,6 @@ body {
    Redacted Text Effect (CSS-only)
    ======================================================================== */
 
-.redacted {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.redacted::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--color-primary);
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-
-.redacted:hover::after,
-.redacted:focus::after {
-  opacity: 0;
-}
 
 /* ========================================================================
    Venetian Blind Shadow Lines
