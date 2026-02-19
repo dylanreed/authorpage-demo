@@ -4,11 +4,11 @@
 # To add a new book, copy everything from the dash (-) to the next dash
 # and fill in your book's details. Newest books should go at the top.
 
-- title: "The Midnight Garden"
-  cover: "/images/midnight-garden.jpg"
-  tagline: "A novel about memory and forgetting"
-  description: "When Clara returns to her grandmother's house after twenty years, she discovers a garden that blooms only at night — and a family secret buried beneath its roots."
-  published: 2024
+- title: "The Amazing Squirrel"
+  cover: "/images/Squirrel.jpg"
+  tagline: "A short story about The Amazing Squirrel"
+  description: "Do cool gadgets make the superhero?"
+  published: 2016
   buy_links:
     - label: "Amazon"
       url: "https://amazon.com/dp/your-book-id"
@@ -18,11 +18,11 @@
       url: "https://barnesandnoble.com/w/your-book-id"
   featured: true
 
-- title: "Letters from the Peninsula"
-  cover: "/images/letters-peninsula.jpg"
-  tagline: "A story of distance and devotion"
-  description: "An epistolary novel spanning three decades of correspondence between two friends separated by an ocean."
-  published: 2021
+- title: "The Correspondent: Golden Age"
+  cover: "/images/The Correspondent - Golden Age Cover.jpg"
+  tagline: "The second book in the Correspondent Series"
+  description: "A superhero that learned from a correspondent course... are you insane"
+  published: 2007
   buy_links:
     - label: "Amazon"
       url: "https://amazon.com/dp/your-book-id"
