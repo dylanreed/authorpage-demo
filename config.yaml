@@ -3,15 +3,15 @@
 
 baseURL: "https://dylanreed.github.io/authorpage/"
 languageCode: "en-us"
-title: "Author Site"
-theme: "inkwell"
+title: "Dylan Reed's Author Page"
+theme: "mandatory-fun"
 
 disableKinds:
   - taxonomy
   - term
 
 params:
-  description: "Author website built with AuthorPage"
+  description: "Books about nothign and everything"
 
 menu:
   main:
