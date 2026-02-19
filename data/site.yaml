@@ -21,3 +21,14 @@ social:
 
 # Email address shown on the Contact page
 contact_email: "dylan+authorpage@dylanreed.com"
+
+# Newsletter signup form — appears in the footer and contact page of every theme.
+#
+# TO TURN OFF: Leave this blank ("") or delete the line entirely.
+#              The newsletter sections will not appear on your site.
+#
+# TO TURN ON:  Paste your newsletter provider's form action URL below.
+#   Buttondown:  "https://buttondown.com/api/emails/embed-subscribe/your-username"
+#   Mailchimp:   "https://yourname.us1.list-manage.com/subscribe/post?u=XXX&id=YYY"
+#   ConvertKit:  "https://app.convertkit.com/forms/your-form-id/subscriptions"
+newsletter_action: "https://buttondown.com/api/emails/embed-subscribe/dylanreed"
