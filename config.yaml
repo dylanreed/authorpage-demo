@@ -1,7 +1,7 @@
 # ABOUTME: Main Hugo configuration file for the author website.
 # ABOUTME: Controls site-wide settings, theme selection, and menu structure.
 
-baseURL: "https://dylanreed.github.io/authorpage/"
+baseURL: "/"
 languageCode: "en-us"
 title: "Dylan Reed's Author Page"
 theme: "mandatory-fun"
