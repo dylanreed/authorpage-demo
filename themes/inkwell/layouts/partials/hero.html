@@ -8,7 +8,7 @@
       {{/* Author photo with graceful fallback */}}
       {{ with .photo }}
       <div class="hero__photo-wrapper fade-in">
-        <img src="{{ . | relURL }}" alt="Photo of {{ hugo.Data.site.name }}">
+        <img src="{{ strings.TrimPrefix "/" . | relURL }}" alt="Photo of {{ hugo.Data.site.name }}">
       </div>
       {{ else }}
       <div class="hero__photo-wrapper fade-in">

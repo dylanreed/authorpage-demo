@@ -27,6 +27,19 @@
     {{ else }}
       <p class="empty-state">Contact information coming soon.</p>
     {{ end }}
+
+    {{/* Newsletter CTA — only renders if newsletter_action is set in site.yaml */}}
+    {{ with hugo.Data.site.newsletter_action }}
+    <div class="newsletter-cta">
+      <div class="venetian-divider" aria-hidden="true"></div>
+      <p class="newsletter-cta__heading">// Dispatches //</p>
+      <p class="newsletter-cta__text">New case files and classified updates, delivered by wire.</p>
+      <form class="newsletter-form" action="{{ . }}" method="post">
+        <input type="email" name="email" placeholder="your@email.com" class="newsletter-form__input" aria-label="Email address for newsletter" required>
+        <button class="newsletter-form__btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+    {{ end }}
   </section>
 </div>
 {{ end }}

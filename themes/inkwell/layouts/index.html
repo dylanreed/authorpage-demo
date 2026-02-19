@@ -17,7 +17,7 @@
       {{/* Cover with fallback */}}
       <div class="featured-book__cover-wrapper">
         {{ with .cover }}
-        <img src="{{ . | relURL }}" alt="Cover of {{ $book.title }}">
+        <img src="{{ strings.TrimPrefix "/" . | relURL }}" alt="Cover of {{ $book.title }}">
         {{ else }}
         <div class="featured-book__cover-placeholder">{{ .title }}</div>
         {{ end }}

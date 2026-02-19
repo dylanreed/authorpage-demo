@@ -9,7 +9,7 @@
       {{/* Author photo with high-contrast treatment */}}
       {{ with .photo }}
       <div class="about__photo-wrapper">
-        <img src="{{ . | relURL }}" alt="Photo of {{ hugo.Data.site.name }}">
+        <img src="{{ strings.TrimPrefix "/" . | relURL }}" alt="Photo of {{ hugo.Data.site.name }}">
       </div>
       {{ else }}
       <div class="about__photo-wrapper">

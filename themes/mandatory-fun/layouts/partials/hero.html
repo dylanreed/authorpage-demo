@@ -8,7 +8,7 @@
     {{/* Author photo with geometric frame */}}
     <div class="hero__photo-wrapper pop-in-delayed">
       {{ with .photo }}
-      <img class="hero__photo" src="{{ . | relURL }}" alt="Photo of {{ $.Site.Title }}">
+      <img class="hero__photo" src="{{ strings.TrimPrefix "/" . | relURL }}" alt="Photo of {{ $.Site.Title }}">
       {{ else }}
       <div class="hero__photo-placeholder" aria-hidden="true"></div>
       {{ end }}

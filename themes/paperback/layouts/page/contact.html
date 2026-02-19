@@ -28,15 +28,17 @@
       <p class="empty-state slide-up-delayed">Contact information coming soon.</p>
     {{ end }}
 
-    {{/* Newsletter CTA section */}}
+    {{/* Newsletter CTA section — only renders if newsletter_action is set in site.yaml */}}
+    {{ with hugo.Data.site.newsletter_action }}
     <div class="newsletter-cta slide-up-late">
       <h2 class="newsletter-cta__heading">Stay in the Loop</h2>
       <p class="newsletter-cta__text">Get notified about new releases, events, and behind-the-scenes updates.</p>
-      <form class="newsletter-cta__form" action="#" method="post">
-        <input type="email" placeholder="your@email.com" class="newsletter-cta__input" aria-label="Email address for newsletter" required>
+      <form class="newsletter-cta__form" action="{{ . }}" method="post">
+        <input type="email" name="email" placeholder="your@email.com" class="newsletter-cta__input" aria-label="Email address for newsletter" required>
         <button class="btn btn--accent" type="submit">Subscribe</button>
       </form>
     </div>
+    {{ end }}
   </section>
 </div>
 {{ end }}

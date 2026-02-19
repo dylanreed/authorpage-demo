@@ -9,7 +9,7 @@
       {{/* Author photo with high-contrast treatment */}}
       {{ with .photo }}
       <div class="hero__photo-wrapper">
-        <img src="{{ . | relURL }}" alt="Photo of {{ hugo.Data.site.name }}">
+        <img src="{{ strings.TrimPrefix "/" . | relURL }}" alt="Photo of {{ hugo.Data.site.name }}">
       </div>
       {{ else }}
       <div class="hero__photo-wrapper">
@@ -33,9 +33,17 @@
   {{/* Featured book teaser with REDACTED description */}}
   {{ with hugo.Data.books }}
     {{ range where . "featured" true }}
+    {{ $book := . }}
     <div class="container">
       <div class="hero__featured">
         <p class="hero__featured-label">// CASE FILE // FEATURED //</p>
+
+        {{ with .cover }}
+        <div class="hero__featured-cover">
+          <img src="{{ strings.TrimPrefix "/" . | relURL }}" alt="Cover of {{ $book.title }}">
+        </div>
+        {{ end }}
+
         <h2 class="hero__featured-title">{{ .title }}</h2>
 
         {{ with .description }}

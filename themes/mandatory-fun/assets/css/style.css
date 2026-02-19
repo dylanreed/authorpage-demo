@@ -529,7 +529,10 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
 }
 
 .book-card__title {
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
   margin-bottom: var(--space-xs);
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .book-card__tagline {
@@ -735,9 +738,90 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
   text-align: center;
 }
 
+.site-footer__newsletter {
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-md);
+  border-bottom: 2px solid var(--color-border);
+  text-align: center;
+}
+
+.site-footer__newsletter-heading {
+  font-size: 1.4rem;
+  margin-bottom: var(--space-xs);
+}
+
+.site-footer__newsletter-text {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .site-footer__copy {
   font-size: 0.9rem;
   color: var(--color-text-muted);
+}
+
+/* Newsletter form — shared between footer and contact page */
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.newsletter-form__input {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: white;
+  color: var(--color-text);
+  transition: border-color 0.2s var(--ease-smooth);
+}
+
+.newsletter-form__input:focus {
+  border-color: var(--color-secondary);
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+.newsletter-form__btn {
+  /* Inherits .btn styles in mandatory-fun, just needs overrides */
+}
+
+.newsletter-cta {
+  margin-top: var(--space-lg);
+  padding: var(--space-md);
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.newsletter-cta__heading {
+  font-size: 1.4rem;
+  margin-bottom: var(--space-xs);
+}
+
+.newsletter-cta__text {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 480px) {
+  .newsletter-form {
+    flex-direction: row;
+  }
+
+  .newsletter-form__input {
+    flex: 1;
+  }
 }
 
 

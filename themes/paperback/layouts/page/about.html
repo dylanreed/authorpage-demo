@@ -10,7 +10,7 @@
         {{/* Author photo with fallback */}}
         <div class="about__photo-wrapper">
           {{ with .photo }}
-          <img src="{{ . | relURL }}" alt="Photo of {{ hugo.Data.site.name }}">
+          <img src="{{ strings.TrimPrefix "/" . | relURL }}" alt="Photo of {{ hugo.Data.site.name }}">
           {{ else }}
           <div class="about__photo-placeholder"></div>
           {{ end }}

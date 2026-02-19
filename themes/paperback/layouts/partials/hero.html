@@ -29,7 +29,7 @@
 
         <div class="hero__cover slide-up-delayed">
           {{ with .cover }}
-          <img src="{{ . | relURL }}" alt="Cover of {{ $book.title }}" class="hero__cover-img">
+          <img src="{{ strings.TrimPrefix "/" . | relURL }}" alt="Cover of {{ $book.title }}" class="hero__cover-img">
           {{ else }}
           <div class="hero__cover-placeholder">{{ .title }}</div>
           {{ end }}

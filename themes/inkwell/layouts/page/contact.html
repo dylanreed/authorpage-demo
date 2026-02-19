@@ -26,6 +26,18 @@
     {{ else }}
       <p class="empty-state fade-in-delayed">Contact information coming soon.</p>
     {{ end }}
+
+    {{/* Newsletter CTA — only renders if newsletter_action is set in site.yaml */}}
+    {{ with hugo.Data.site.newsletter_action }}
+    <div class="newsletter-cta fade-in-late">
+      <h2 class="newsletter-cta__heading">Stay in Touch</h2>
+      <p class="newsletter-cta__text">New book announcements and occasional musings, delivered to your inbox.</p>
+      <form class="newsletter-form" action="{{ . }}" method="post">
+        <input type="email" name="email" placeholder="your@email.com" class="newsletter-form__input" aria-label="Email address for newsletter" required>
+        <button class="newsletter-form__btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+    {{ end }}
   </section>
 </div>
 {{ end }}
