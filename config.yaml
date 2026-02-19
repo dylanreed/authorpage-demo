@@ -4,7 +4,7 @@
 baseURL: "/"
 languageCode: "en-us"
 title: "Dylan Reed's Author Page"
-theme: "paperback"
+theme: "typewriter"
 
 disableKinds:
   - taxonomy
