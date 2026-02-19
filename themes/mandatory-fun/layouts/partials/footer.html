@@ -1,0 +1,16 @@
+{{/* ABOUTME: Site footer for Mandatory Fun theme with bold top accent border. */}}
+{{/* ABOUTME: Shows copyright, author name, and social links. */}}
+
+<footer class="site-footer">
+  <div class="container">
+    {{ with hugo.Data.site }}
+    <div class="site-footer__inner">
+      <p class="site-footer__copy">
+        &copy; {{ now.Year }} {{ .name }}. Built with joy and mild coercion.
+      </p>
+
+      {{ partial "social-links.html" . }}
+    </div>
+    {{ end }}
+  </div>
+</footer>

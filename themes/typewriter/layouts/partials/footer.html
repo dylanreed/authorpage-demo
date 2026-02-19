@@ -1,0 +1,18 @@
+{{/* ABOUTME: Site footer partial with monospace text and // separators. */}}
+{{/* ABOUTME: Displays social links and copyright in the dark noir aesthetic. */}}
+
+<footer class="site-footer">
+  <div class="venetian-divider" aria-hidden="true"></div>
+  <div class="container">
+    {{ with hugo.Data.site }}
+      {{ with .social }}
+      <div class="site-footer__social">
+        {{ partial "social-links.html" . }}
+      </div>
+      {{ end }}
+      <p class="site-footer__copyright">&copy; {{ now.Year }} {{ .name }}. Case closed.</p>
+    {{ else }}
+      <p class="site-footer__copyright">&copy; {{ now.Year }} {{ site.Title }}</p>
+    {{ end }}
+  </div>
+</footer>
